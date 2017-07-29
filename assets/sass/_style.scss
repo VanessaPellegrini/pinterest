@@ -3,7 +3,20 @@
 	padding:0;
 }
 body{
+	font-family: 'Roboto', sans-serif;
 	background: #e9e9e9;
+	color:$grisTipo;
+	font-weight: bold;
+	nav{
+		background: #fff;
+		border: 1px solid $grisTipo;
+		div.container-fluid{
+			background:#fff;		
+		}
+		i{
+			color:$rojoPinterest;
+		}
+	}
 	.contenedor{
 		width:90%;
 		margin:15px auto;
@@ -11,12 +24,6 @@ body{
 
 		}
 	}
-	/*modales*/
-	.contenedorModal{
-		width: 500px;
-		height:500px;
-	}
-
 	/*estilo modal*/
 	div.modal-container{
 		padding: 2% 30%;

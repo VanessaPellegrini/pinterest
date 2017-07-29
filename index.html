@@ -3,42 +3,90 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Pinterest</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<script src="https://use.fontawesome.com/e81f3961b0.js"></script>
 	<link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 <body>
+	<!--navegador-->
 	<div class="navegador">
-		<nav>
-			<ul>
-				<li class="logo">
-					<div class="img-logo">
-						
-					</div>
-					<h6>Inicio</h6>
-				</li>
-				<li>
-					<input type="text">
-				</li>
-				<li>
-					<div class="dropdown">
-						
-					</div>
-				</li>
-				<li>
-					<div class="img-perfil">
-						
-					</div>
-				</li>
-				<li></li>
-				<li></li>
-			</ul>
+		<nav class="navbar navbar-inverse">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+      				<a class="navbar-brand" href="#"><i class="fa fa-pinterest" aria-hidden="true"></i>Inicio</a>
+    			</div>
+    			<ul class="nav navbar-nav">
+			      	<li>
+				      	<div class="input-group">
+	  						<span class="input-group-addon" id="basic-addon1">@</span>
+	  						<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1"><span class="input-group-addon">.00</span>
+						</div>
+					</li>
+			      	<li>
+			      	<!-- Single button -->
+						<div class="btn-group">
+	  						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    					Action <span class="caret"></span>
+	  						</button>
+	  						<ul class="dropdown-menu">
+	    						<li><a href="#">Action</a></li>
+							    <li><a href="#">Another action</a></li>
+							    <li><a href="#">Something else here</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li><a href="#">Separated link</a></li>
+						  	</ul>
+						</div>
+  					</li>
+			      	<li><a href="#">VannPellegrini</a></li>
+			      	<li>
+			      		<i class="fa fa-bars" aria-hidden="true"></i>
+			      	</li>
+			      	<li>
+			      		<div><i class="fa fa-commenting" aria-hidden="true"><span>9+</span></i></div>
+
+			      	</li>
+    			</ul>
+  			</div>
 		</nav>
 	</div>
 	<!-- contenedor de imagenes -->
 	<div class="contenedor" id="container">
 		<!-- elementos -->
-		<!-- <div class="el">
-					<img src="dist/img/1.jpg" alt="" width="220" height="300">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit alias aliquid quos odit dolore architecto consequuntur quia cupiditate reiciendis consectetur ullam distinctio, nemo, eos quisquam provident et temporibus minus numquam.</p>
+	</div>
+	<div class="modal-container" id="myModal">
+		<!-- <div class="first-modal-box">
+			<ul>
+				<li><i>ICON</i></li>
+				<li><i>ICON</i></li>
+				<li><i>ICON</i></li>
+			</ul>
+			<button>GUARDAR</button>
+		</div>
+		<div class="titulo-modal">
+			<h4>hola</h4>
+		</div>
+		<div class="img-modal">
+			<img src="dist/img/1.jpg" alt="">
+		</div>
+		<div class="second-modal-box">
+			<ul>
+				<li><i>ICON</i></li>
+				<li><i>ICON</i></li>
+				<li><i>ICON</i></li>
+			</ul>
+			<button>GUARDAR</button>
+		</div>
+		<div class="usuario-modal">
+			<h5>pedrito</h5>
+			<div class="hasgtag-modal">
+				<small>holiwi</small>
+			</div>
+		</div>
+		<div class="btn-leer">
+			<button>Leerlo</button>
+		</div>
+		<div class="descripcion-modal">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, quas rem ipsam corrupti aut nemo asperiores eveniet quidem. Deleniti, magnam. Hic rerum, blanditiis vitae, quisquam itaque earum mollitia consequatur quidem.</p>
 		</div> -->
 	</div>
 	<script src='dist/js/script.js' ></script>

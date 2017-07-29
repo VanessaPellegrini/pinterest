@@ -4,8 +4,8 @@ $(document).ready(function() {
 	var maxImg = 20;
 	var indexImg = 0;
 
-	function ponerImagen(imgInfo, index){
-		var div = 	'<div class="el contenedorModal">\
+	function ponerImagen(imgInfo){
+		var div = 	'<div class="lista-img contenedorModal">\
 						<img src="dist/img/'+imgInfo.image_url+'" alt="" width="220" height="300">\
 						<h5>'+imgInfo.title+'</h5>\
 						<p>'+imgInfo.description+'</p>\
@@ -13,12 +13,52 @@ $(document).ready(function() {
 					</div>';
 		div = $(div);//Convierte en objeto jquery para poder utilizarlo.
 
+		/*modal*/
 		div.data('info', imgInfo);//Método que permite adjuntar datos de cualquier tipo a los elementos DOM.
 		//$("#container").append(div);
 
-		div.find('img').click(function(event) {
+		var infoModal = $('#myModal');
+
+		div.find('img').click(function(event) {//find devuelve elementos descendentes del elemento seleccionado(los child).
 			var info = div.data('info');
-			console.log(info);
+			/*console.log(info);*/
+			var modalData = '<div class="first-modal-box">\
+							<ul>\
+								<li><i>ICON</i></li>\
+								<li><i>ICON</i></li>\
+								<li><i>ICON</i></li>\
+							</ul>\
+							<button>GUARDAR</button>\
+						</div>\
+						<div class="titulo-modal">\
+							<h4>hola</h4>\
+						</div>\
+						<div class="img-modal">\
+							<img src="dist/img/1.jpg" alt="">\
+						</div>\
+						<div class="second-modal-box">\
+							<ul>\
+								<li><i>ICON</i></li>\
+								<li><i>ICON</i></li>\
+								<li><i>ICON</i></li>\
+							</ul>\
+							<button>GUARDAR</button>\
+						</div>\
+						<div class="usuario-modal">\
+							<h5>pedrito</h5>\
+							<div class="hasgtag-modal">\
+								<small>holiwi</small>\
+							</div>\
+						</div>\
+						<div class="btn-leer">\
+							<button>Leerlo</button>\
+						</div>\
+						<div class="descripcion-modal">\
+							<p></p>\
+						</div>';
+			infoModal.find('.modal-body').html(modalData);
+            modal.modal('show');
+			//console.log(this);
 		});
 		div.appendTo('#container').hide().show('slow');
 	};
@@ -40,41 +80,4 @@ $(document).ready(function() {
 	       siguientesImg();
 	   }
 	});
-	/*modal*/
-	$('img[src="dist/img/'+data.image_url+'"]').click(function(){
-		alert('Evento click sobre un input text con nombre="nombre1"');
-	});
-/*	$(".contenedorModal").click(function(){
-		$('.target').show(3000,function() {
-                alert ('imagen mostrada!');
-		});
- 	});
-	$("#ocultar").click(function(){
-		$('.target').hide(3000,function() {
-                alert ('imagen ocultada!');
-		});
-	});*/
-			var numImg = function(data){
-		var obtenerNumIMg = data.image_url;
-		console.log(obtenerNumIMg);
-	}
-	numImg();
-		$("img[src="data.image_url"]").click(function(){
-		alert('Evento click sobre un input text con nombre="nombre1"');
-	});
-			/*modal*/
-	$("img[src="data.image_url"]").click(function(){
-		alert('Evento click sobre un input text con nombre="nombre1"');
-	});
-/*	$(".contenedorModal").click(function(){
-		$('.target').show(3000,function() {
-                alert ('imagen mostrada!');
-		});
- 	});
-	$("#ocultar").click(function(){
-		$('.target').hide(3000,function() {
-                alert ('imagen ocultada!');
-		});
-	});*/
-	
 });
