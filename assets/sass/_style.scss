@@ -11,4 +11,22 @@ body{
 
 		}
 	}
+	/*modales*/
+	.contenedorModal{
+		width: 500px;
+		height:500px;
+	}
+
+	/*estilo modal*/
+	div.modal-container{
+		padding: 2% 30%;
+		ul{
+			position: relative;
+    		display: inline-flex;
+    		li{
+    			padding: 6%;
+    		}
+		}
+	}
 }
+
