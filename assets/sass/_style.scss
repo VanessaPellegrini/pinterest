@@ -147,7 +147,9 @@ body{
 	}
 	/*ESTILO FOTOS-DOM*/
 	.contenedor{
-		margin-left: 10%;
+		float: left;
+		width: 90%;
+		margin: 0px 127px;
 		div.lista-img{
 			width: 23%;
 			float:left;
@@ -191,15 +193,5 @@ body{
 		}
 	}
 	/*estilo modal*/
-	div.modal-container{
-		padding: 2% 30%;
-		ul{
-			position: relative;
-    		display: inline-flex;
-    		li{
-    			padding: 6%;
-    		}
-		}
-	}
 }
 

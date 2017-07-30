@@ -38,43 +38,45 @@ $(document).ready(function() {
 		div.find('img').click(function(event) {//find devuelve elementos descendentes del elemento seleccionado(los child).
 			var info = div.data('info');
 			/*console.log(info);*/
-			var modalData = '<div class="first-modal-box">\
-							<ul>\
-								<li><i>ICON</i></li>\
-								<li><i>ICON</i></li>\
-								<li><i>ICON</i></li>\
-							</ul>\
-							<button>GUARDAR</button>\
-						</div>\
-						<div class="titulo-modal">\
-							<h4>hola</h4>\
-						</div>\
-						<div class="img-modal">\
-							<img src="dist/img/1.jpg" alt="">\
-						</div>\
-						<div class="second-modal-box">\
-							<ul>\
-								<li><i>ICON</i></li>\
-								<li><i>ICON</i></li>\
-								<li><i>ICON</i></li>\
-							</ul>\
-							<button>GUARDAR</button>\
-						</div>\
-						<div class="usuario-modal">\
-							<h5>pedrito</h5>\
-							<div class="hasgtag-modal">\
-								<small>holiwi</small>\
-							</div>\
-						</div>\
-						<div class="btn-leer">\
-							<button>Leerlo</button>\
-						</div>\
-						<div class="descripcion-modal">\
-							<p></p>\
-						</div>';
-			infoModal.find('.modal-body').html(modalData);
-            modal.modal('show');
-			//console.log(this);
+			var modalData = '<div class="modalBox" id="muestraModal">\
+			 				<ul>\
+			 					<li><i>ICON</i></li>\
+			 					<li><i>ICON</i></li>\
+			 					<li><i>ICON</i></li>\
+			 				</ul>\
+			 				<button>GUARDAR</button>\
+			 			</div>\
+			 			<div class="titulo-modal">\
+			 				<h4>hola</h4>\
+			 			</div>\
+			 			<div class="img-modal">\
+			 				<img src="dist/img/1.jpg" alt="">\
+			 			</div>\
+			 			<div class="second-modal-box">\
+			 				<ul>\
+			 					<li><i>ICON</i></li>\
+			 					<li><i>ICON</i></li>\
+			 					<li><i>ICON</i></li>\
+			 				</ul>\
+			 				<button>GUARDAR</button>\
+			 			</div>\
+			 			<div class="usuario-modal">\
+			 				<h5>pedrito</h5>\
+			 				<div class="hasgtag-modal">\
+			 					<small>holiwi</small>\
+			 				</div>\
+			 			</div>\
+			 			<div class="btn-leer">\
+			 				<button>Leerlo</button>\
+			 			</div>\
+			 			<div class="descripcion-modal">\
+			 				<p></p>\
+			 			</div>';
+			// htmlData = $(this).find('.profile').html();
+   //      	infoModal.find('.modal-body').html(htmlData);
+   //      	infoModal.modal('show');
+			infoModal.find('.fotoCompleta').html(modalData);
+            infoModal.modal();
 		});
 		div.appendTo('#container').hide().show('slow');
 	};

@@ -6,15 +6,14 @@ var minifyCSS = require('gulp-minify-css');
 var webserver = require('gulp-webserver');
 
 gulp.task('script', function(){
-    gulp.src(['node_modules/jquery/dist/jquery.js', 'assets/js/json.js', 'assets/js/main.js', 'node_modules/bootstrap/dist/js/bootstrap.js', 'node_modules/bootstrap/dist/js/npm.js', 
-    'node_modules/bootstrap/dist/js/bootstrap.min.js'])
+    gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery-modal/jquery.modal.js', 'assets/js/json.js', 'assets/js/main.js','node_modules/bootstrap/dist/bootstrap.js','node_modules/bootstrap/dist/bootstrap.min.js'])
     .pipe(concat('script.js'))
     // carpeta dist
     .pipe(gulp.dest('dist/js/'));
 });
 
 gulp.task('style', function(){
-    gulp.src(['assets/sass/main.scss', 'node_modules/bootstrap/dist/css/bootstrap.css'])
+    gulp.src(['assets/sass/main.scss', 'node_modules/bootstrap/dist/css/bootstrap.css', 'node_modules/jquery-modal/jquery.modal.css'])
     .pipe(sass().on('error', sass.logError))
     .pipe(minifyCSS())
     .pipe(concat('style.min.css'))
