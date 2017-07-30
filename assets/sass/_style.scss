@@ -175,8 +175,7 @@ body{
     						top: -2px;
 						}
 						.iconImg{
-							position: relative;
-    						top: -8px;
+							@include usuarioImagen();
 						}
 					}
 					list-style: none;
@@ -202,21 +201,18 @@ body{
 			div.modalBox{
 				div.iconosModalTop{
 					ul{
-						position: relative;
-    					display: inline-flex;
-    					padding: 10px;
-    					list-style:none;
+						@include iconosModalUl();
     					li{
     						padding: 10px;
-    						color: $grisTipo;
+    						a{
+    							i{
+    								color: $grisTipo;
+    							}
+    						}
     					}
 					}
 					button{
-						position: relative;
-    					left: 169px;
-    					background-color:$rojoPinterest;
-    					color:white;
-    					font-weight: bold;
+						@include botonModal();
 					}
 				}
 				div.titulo-modal{
@@ -232,21 +228,39 @@ body{
 				}
 				div.iconosModalBot{
 					ul{
-						position: relative;
-    					display: inline-flex;
-    					padding: 10px;
-    					list-style:none;
+						@include iconosModalUl();
     					li{
     						padding: 10px;
-    						color: $grisTipo;
+    						a{
+    							i{
+    								color: $grisTipo;
+    							}
+    						}
     					}
 					}
 					button{
-						position: relative;
-    					left: 169px;
-    					background-color:$rojoPinterest;
-    					color:white;
-    					font-weight: bold;
+						@include botonModal();
+					}
+				}
+				div.usuario-modal{
+					@include usuarioImagen()
+					display: inline-flex;
+					img{
+						padding: 10px;
+					}
+					small.userInfo{
+						top: 18px;
+    					position: relative;
+    					small{
+    						top: 18px;
+    					}
+					}
+					button{
+						color: #000;
+						background-color:$grisTipo;
+						@include botonModal();
+						padding: 0px 15px;
+						height: 39px;
 					}
 				}
 			}
@@ -254,7 +268,7 @@ body{
 	}
 	div.jquery-modal.blocker.current{
 		z-index: 5;
-		    background-color: #e9e9e9;
+		background-color: #e9e9e9;
 	}
 }
 

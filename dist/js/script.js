@@ -10559,10 +10559,7 @@ $(document).ready(function() {
 				 					<button class="btn btn-default"><i class="fa fa-thumb-tack" aria-hidden="true"></i> GUARDAR</button>\
 			 					</div>\
 					 			<div class="usuario-modal">\
-					 				<h5>'+info.user+'</h5>\
-					 				<div class="hasgtag-modal">\
-					 					<small>'+info.hashtag+'</small>\
-					 				</div>\
+					 				<img src="dist/img/love.png" alt=""><small class="userInfo">'+info.user+'<small> #'+info.hashtag+'</small></small>\
 					 				<button class="btn btn-default">Leerlo</button>\
 					 			</div>\
 					 			<div class="descripcion-modal">\
