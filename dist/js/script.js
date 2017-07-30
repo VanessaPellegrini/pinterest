@@ -10265,9 +10265,9 @@ $(document).ready(function() {
 								<img src="dist/img/'+imgInfo.image_url+'" alt="" width="250">\
 								<div class="cajaTexto">\
 									<h3>'+imgInfo.title+'</h3>\
-									<small><i class="fa fa-thumb-tack" aria-hidden="true"></i>36,6K <i class="fa fa-check" aria-hidden="true"></i> 6</small>\
+									<small class="pinLike"><i class="fa fa-thumb-tack" aria-hidden="true"></i>36,6K <i class="fa fa-check" aria-hidden="true"></i> 6</small>\
 									<p>'+imgInfo.description+'</p>\
-									<small>'+imgInfo.user+'<small>#'+imgInfo.hashtag+'</small></small>\
+									<div class="iconImg"><img src="dist/img/love.png" alt=""></div><small class="userInfo">'+imgInfo.user+'<small> #'+imgInfo.hashtag+'</small></small>\
 								</div>\
 							</li>\
 						</ul>\
