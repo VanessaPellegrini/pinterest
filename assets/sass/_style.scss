@@ -160,25 +160,30 @@ body{
 		    	display:block;
 				li{
 					.cajaTexto{
-						padding: 10px;
+						margin-left: 7%;
 						.pinLike{
 							position: relative;
    	 						display: flex;
-    						top: -75px;
-    						left: 178px;
+    						left: 81%;
     						color: $grisTipo;
+    						top: 7px;
+						}
+						.cajaTituloDescrip{
+							position: relative;
+    						top: -2px;
+						}
+						.iconImg{
+							position: relative;
+    						top: -8px;
 						}
 					}
 					list-style: none;
 					width:220px;
-					h3{
+					h4{
 						font-weight: bold;
 					}
 					img{
 						border-radius: 30px;
-					}
-					.userInfo{
-						margin-left:40px;
 					}
 				}
 			}

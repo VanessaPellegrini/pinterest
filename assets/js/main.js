@@ -7,12 +7,21 @@ $(document).ready(function() {
 		var div = 	'<div class="lista-img contenedorModal">\
 						<ul>\
 							<li>\
-								<img src="dist/img/'+imgInfo.image_url+'" alt="" width="250">\
+								<div class="contenedorImg">\
+									<img src="dist/img/'+imgInfo.image_url+'" alt="" width="250">\
+								</div>\
 								<div class="cajaTexto">\
-									<h3>'+imgInfo.title+'</h3>\
-									<small class="pinLike"><i class="fa fa-thumb-tack" aria-hidden="true"></i>36,6K <i class="fa fa-check" aria-hidden="true"></i> 6</small>\
-									<p>'+imgInfo.description+'</p>\
-									<div class="iconImg"><img src="dist/img/love.png" alt=""></div><small class="userInfo">'+imgInfo.user+'<small> #'+imgInfo.hashtag+'</small></small>\
+									<div class="cajaLike">\
+										<small class="pinLike"><i class="fa fa-thumb-tack" aria-hidden="true"></i>36,6K <i class="fa fa-check" aria-hidden="true"></i> 6</small>\
+									</div>\
+									<div class="cajaTituloDescrip">\
+										<h4>'+imgInfo.title+'</h4>\
+										<p>'+imgInfo.description+'</p>\
+									</div>\
+									<div class="iconImg">\
+										<img src="dist/img/love.png" alt="">\
+										<small class="userInfo">'+imgInfo.user+'<small> #'+imgInfo.hashtag+'</small></small>\
+									</div>\
 								</div>\
 							</li>\
 						</ul>\
