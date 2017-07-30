@@ -1,16 +1,23 @@
 $(document).ready(function() {
 //console.log(arr);
-
 	var maxImg = 20;
 	var indexImg = 0;
 
 	function ponerImagen(imgInfo){
 		var div = 	'<div class="lista-img contenedorModal">\
-						<img src="dist/img/'+imgInfo.image_url+'" alt="" width="220" height="300">\
-						<h5>'+imgInfo.title+'</h5>\
-						<p>'+imgInfo.description+'</p>\
-						<p>'+imgInfo.user+'<small>'+imgInfo.hashtag+'</small></p>\
+						<ul>\
+							<li>\
+								<img src="dist/img/'+imgInfo.image_url+'" alt="" width="250">\
+								<div class="cajaTexto">\
+									<h3>'+imgInfo.title+'</h3>\
+									<small><i class="fa fa-thumb-tack" aria-hidden="true"></i>36,6K <i class="fa fa-check" aria-hidden="true"></i> 6</small>\
+									<p>'+imgInfo.description+'</p>\
+									<small>'+imgInfo.user+'<small> #'+imgInfo.hashtag+'</small></small>\
+								</div>\
+							</li>\
+						</ul>\
 					</div>';
+
 		div = $(div);//Convierte en objeto jquery para poder utilizarlo.
 
 		/*modal*/
