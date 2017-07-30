@@ -25,6 +25,10 @@ body{
 					display: inline-flex;
 				    position: relative;
 				    left: 50px;
+				    top: 5px;
+				}
+				a.navbar-brand:hover{
+						color:$rojoPinterest;
 				}
 				.logo{
 					padding: 10px;
@@ -54,7 +58,7 @@ body{
 				li.btnDrop{
 					background-color: #EEEEEE;
 				    height: 34px;
-				    left: -112px;
+				    left: -109px;
 				    width: 408px;
 				    top: 10px;
 					button{
@@ -122,6 +126,25 @@ body{
 			}
 		}
 	}
+	/*estilos busqueda*/
+	div.btn-toolbar{
+		div.btn-group{
+			padding: 20px 6px;
+		    position: relative;
+		    left: 40px;
+		    button{
+		    	color:#fff;
+		    	font-weight: bold;
+		    	padding: 15px;
+		    	border: none;
+		    	background-image: url(../../dist/img/13.jpg);
+		    	background-size: cover;
+		    }
+		    button.btn.btn-default:hover{
+		    	background-color:rgba(0,0,0,0.3);
+		    }
+		}
+	}
 	/*ESTILO FOTOS-DOM*/
 	.contenedor{
 		margin-left: 10%;
@@ -137,6 +160,7 @@ body{
 		    	display:block;
 				li{
 					.cajaTexto{
+						padding: 10px;
 						.pinLike{
 							position: relative;
    	 						display: flex;
