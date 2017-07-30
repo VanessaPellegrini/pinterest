@@ -10536,42 +10536,40 @@ $(document).ready(function() {
 			var info = div.data('info');
 			/*console.log(info);*/
 			var modalData = '<div class="modalBox" id="muestraModal">\
-			 				<ul>\
-			 					<li><i>ICON</i></li>\
-			 					<li><i>ICON</i></li>\
-			 					<li><i>ICON</i></li>\
-			 				</ul>\
-			 				<button>GUARDAR</button>\
-			 			</div>\
-			 			<div class="titulo-modal">\
-			 				<h4>hola</h4>\
-			 			</div>\
-			 			<div class="img-modal">\
-			 				<img src="dist/img/1.jpg" alt="">\
-			 			</div>\
-			 			<div class="second-modal-box">\
-			 				<ul>\
-			 					<li><i>ICON</i></li>\
-			 					<li><i>ICON</i></li>\
-			 					<li><i>ICON</i></li>\
-			 				</ul>\
-			 				<button>GUARDAR</button>\
-			 			</div>\
-			 			<div class="usuario-modal">\
-			 				<h5>pedrito</h5>\
-			 				<div class="hasgtag-modal">\
-			 					<small>holiwi</small>\
-			 				</div>\
-			 			</div>\
-			 			<div class="btn-leer">\
-			 				<button>Leerlo</button>\
-			 			</div>\
-			 			<div class="descripcion-modal">\
-			 				<p></p>\
-			 			</div>';
-			// htmlData = $(this).find('.profile').html();
-   //      	infoModal.find('.modal-body').html(htmlData);
-   //      	infoModal.modal('show');
+								<div class="iconosModalTop">\
+				 					<ul>\
+					 					<li><a href="#"><i class="fa fa-upload fa-2x" aria-hidden="true"></i></a></li>\
+					 					<li><a href="#"><i class="fa fa-check fa-2x" aria-hidden="true"></i></a></li>\
+					 					<li><a href="#"><i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i></a></li>\
+				 					</ul>\
+				 					<button class="btn btn-default"><i class="fa fa-thumb-tack" aria-hidden="true"></i> GUARDAR</button>\
+			 					</div>\
+			 					<div class="titulo-modal">\
+			 						<h3>'+info.title+'</h3>\
+			 					</div>\
+					 			<div class="img-modal">\
+					 				<img src="dist/img/'+info.image_url+'" alt="">\
+					 			</div>\
+					 			<div class="iconosModalBot">\
+				 					<ul>\
+					 					<li><a href="#"><i class="fa fa-upload fa-2x" aria-hidden="true"></i></a></li>\
+					 					<li><a href="#"><i class="fa fa-check fa-2x" aria-hidden="true"></i></a></li>\
+					 					<li><a href="#"><i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i></a></li>\
+				 					</ul>\
+				 					<button class="btn btn-default"><i class="fa fa-thumb-tack" aria-hidden="true"></i> GUARDAR</button>\
+			 					</div>\
+					 			<div class="usuario-modal">\
+					 				<h5>'+info.user+'</h5>\
+					 				<div class="hasgtag-modal">\
+					 					<small>'+info.hashtag+'</small>\
+					 				</div>\
+					 				<button class="btn btn-default">Leerlo</button>\
+					 			</div>\
+					 			<div class="descripcion-modal">\
+					 				<p>'+info.description+'</p>\
+					 			</div>\
+					 		</div>';
+			 			
 			infoModal.find('.fotoCompleta').html(modalData);
             infoModal.modal();
 		});

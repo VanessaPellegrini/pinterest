@@ -193,5 +193,68 @@ body{
 		}
 	}
 	/*estilo modal*/
+	form#myModal.modalContainer.modal{
+		a.close-modal{
+			top: 5.5px;
+    		right: 4.5px;
+		}
+		div.fotoCompleta{
+			div.modalBox{
+				div.iconosModalTop{
+					ul{
+						position: relative;
+    					display: inline-flex;
+    					padding: 10px;
+    					list-style:none;
+    					li{
+    						padding: 10px;
+    						color: $grisTipo;
+    					}
+					}
+					button{
+						position: relative;
+    					left: 169px;
+    					background-color:$rojoPinterest;
+    					color:white;
+    					font-weight: bold;
+					}
+				}
+				div.titulo-modal{
+					h3{
+						font-weight:bold;
+					}
+				}
+				div.img-modal{
+					img{
+						border-radius: 14px;
+    					width: 100%;
+					}
+				}
+				div.iconosModalBot{
+					ul{
+						position: relative;
+    					display: inline-flex;
+    					padding: 10px;
+    					list-style:none;
+    					li{
+    						padding: 10px;
+    						color: $grisTipo;
+    					}
+					}
+					button{
+						position: relative;
+    					left: 169px;
+    					background-color:$rojoPinterest;
+    					color:white;
+    					font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+	div.jquery-modal.blocker.current{
+		z-index: 5;
+		    background-color: #e9e9e9;
+	}
 }
 
