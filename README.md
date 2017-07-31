@@ -3,11 +3,13 @@ PINTEREST - Proyecto Final Laboratoria - Autor : Vanessa Pellegrini - Versión 0
 **Detalles Técnicos**
 -----------------------------
 **Dependencias de desarrollo**
+-----------------------------
   1. Gulp : Task Runner basado en Node.js y npm, para automatizar tareas repetitivas, en este caso pemitió la correcta compilación,
   concatenación, minificación y optimización del código, a través de sus diferentes utilidades.
   2. Sass : Metalenguaje anidado de hojas de estilos que permite crear variables, mixin, nesting (anidamiento) y herencia de los selectores.
   
  **versiones instaladas:
+ ------------------------
    - "gulp": "^3.9.1",
    - "gulp-concat": "^2.6.1",
    - "gulp-minify-css": "^1.2.4",
@@ -23,7 +25,7 @@ PINTEREST - Proyecto Final Laboratoria - Autor : Vanessa Pellegrini - Versión 0
   2. Bootstrap: conjunto de herramientas para el diseño de sitios, contiene plantillas de botones, cuadros y menús de navegación.
   
 **versiones instaladas:
-
+-------------------------
 - "bootstrap": "^3.3.7",
 -  "jquery": "^3.2.1",
 -  "jquery-modal": "^0.8.2"
