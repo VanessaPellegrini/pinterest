@@ -41,7 +41,9 @@ PINTEREST - Proyecto Final Laboratoria - Autor : Vanessa Pellegrini - Versión 0
 * Las fotografías se acomodan de forma fluida pero se forma un espacio entre ellas.
 * El nav pierde la forma en otros navegadores.
 * Las 20 imágenes se cargan correctamente, pero las siguientes 20 hacen un salto en la navegación, esto podría ser una acción por omisión ocasionada por alguna etiqueta, botón o input, una propagación de un evento que realiza una ejecución o un
-listener que interfiera desde DOM. 
+listener que interfiera desde DOM.
+* Algunos iconos no toman el color requerido.
+* No funciona el hover en algunos enlaces.
 ---------------------------------------------------------------------
 **Soluciones implementadas - próximamente
 ---------------------------------------------------------------------
